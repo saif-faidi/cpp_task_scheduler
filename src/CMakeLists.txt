@@ -1,1 +1,3 @@
 add_subdirectory(lib)
+add_subdirectory(power_example)
+add_subdirectory(cpp_thread_class)

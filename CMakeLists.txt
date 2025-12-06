@@ -37,6 +37,9 @@ option(ENABLE_LTO "Enable to add Link Time Optimization." OFF)
 # Project/Library Names
 set(EXECUTABLE_NAME "main")
 set(LIBRARY_LIB_NAME "tsk_lib")
+set(LIBRARY_POWER_NAME "lib_power")
+set(LIBRARY_TH_CLASS_NAME "th_class")
+
 
 # CMAKE MODULES
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
