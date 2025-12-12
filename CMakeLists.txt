@@ -39,6 +39,7 @@ set(EXECUTABLE_NAME "main")
 set(LIBRARY_LIB_NAME "tsk_lib")
 set(LIBRARY_POWER_NAME "lib_power")
 set(LIBRARY_TH_CLASS_NAME "th_class")
+set(LIBRARY_THREAD_POOL_NAME "thread_pool_lib")
 
 
 # CMAKE MODULES

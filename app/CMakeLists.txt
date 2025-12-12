@@ -7,6 +7,7 @@ target_link_libraries(
     PRIVATE ${LIBRARY_LIB_NAME}
             ${LIBRARY_POWER_NAME}
             ${LIBRARY_TH_CLASS_NAME}
+            ${LIBRARY_THREAD_POOL_NAME}
             spdlog::spdlog
             )
 

@@ -1,5 +1,10 @@
-set(LIBRARY_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/return_thread.cc")
-set(LIBRARY_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/return_thread.h")
+set(LIBRARY_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/return_thread.cc"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/data_race.cc"
+
+)
+set(LIBRARY_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/return_thread.h"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/data_race.h"
+)
 set(LIBRARY_INCLUDES "./" "${CMAKE_BINARY_DIR}/configured_files/include")
 
 
