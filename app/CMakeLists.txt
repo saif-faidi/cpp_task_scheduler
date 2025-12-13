@@ -4,10 +4,12 @@ add_executable(${EXECUTABLE_NAME} ${APP_SOURCES})
 
 target_link_libraries(
     ${EXECUTABLE_NAME}
-    PRIVATE ${LIBRARY_LIB_NAME}
-            ${LIBRARY_POWER_NAME}
-            ${LIBRARY_TH_CLASS_NAME}
-            ${LIBRARY_THREAD_POOL_NAME}
+    PRIVATE 
+            # ${LIBRARY_LIB_NAME}
+            # ${LIBRARY_POWER_NAME}
+            # ${LIBRARY_TH_CLASS_NAME}
+            # ${LIBRARY_THREAD_POOL_NAME}
+            ${LIBRARY_PARA_EXEC_NAME}
             spdlog::spdlog
             )
 

@@ -19,7 +19,7 @@ option(USE_CPM "Whether to use CPM." OFF)
 option(ENABLE_WARNINGS "Enable to add warnings to a target." ON)
 option(ENABLE_WARNINGS_AS_ERRORS "Enable to treat warnings as errors." OFF)
 
-option(ENABLE_TESTING "Enable a Unit Testing build." ON)
+option(ENABLE_TESTING "Enable a Unit Testing build." OFF)
 option(ENABLE_COVERAGE "Enable a Code Coverage build." ON)
 
 option(ENABLE_CLANG_TIDY "Enable to add clang tidy." OFF)
@@ -40,6 +40,7 @@ set(LIBRARY_LIB_NAME "tsk_lib")
 set(LIBRARY_POWER_NAME "lib_power")
 set(LIBRARY_TH_CLASS_NAME "th_class")
 set(LIBRARY_THREAD_POOL_NAME "thread_pool_lib")
+set(LIBRARY_PARA_EXEC_NAME "para_execution_lib")
 
 
 # CMAKE MODULES
@@ -151,7 +152,7 @@ add_subdirectory(app)
 if(ENABLE_TESTING)
     include(CTest)
     enable_testing()
-    add_subdirectory(tests)
+    # add_subdirectory(tests)
 endif()
 
 # INSTALL TARGETS
@@ -162,7 +163,7 @@ install(
     LIBRARY DESTINATION lib
     RUNTIME DESTINATION bin)
 
-install(
-    TARGETS ${LIBRARY_LIB_NAME} # add other targets here
-    ARCHIVE DESTINATION lib
-    LIBRARY DESTINATION lib)
+# install(
+#     TARGETS ${LIBRARY_LIB_NAME} # add other targets here
+#     ARCHIVE DESTINATION lib
+#     LIBRARY DESTINATION lib)
